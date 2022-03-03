@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/app/utils/app_colors.dart';
 
 class LibraryPage extends StatefulWidget {
   const LibraryPage({Key? key}) : super(key: key);
@@ -13,7 +14,21 @@ class _LibraryPageState extends State<LibraryPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        const Divider(color: Color.fromARGB(137, 110, 110, 110)),
+        SizedBox(
+          height: 110,
+          child: Expanded(
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 15,
+              itemBuilder: (context, index) => const Card(
+                child: Center(
+                  child: Text('    YouTube Video    '),
+                ),
+              ),
+            ),
+          ),
+        ),
+        const Divider(color: AppColors.dividerColor),
         SizedBox(
           width: double.infinity,
           child: TextButton.icon(
@@ -84,7 +99,7 @@ class _LibraryPageState extends State<LibraryPage> {
             onPressed: () {},
           ),
         ),
-        const Divider(color: Color.fromARGB(137, 110, 110, 110)),
+        const Divider(color: AppColors.dividerColor),
         const Text(
           ' Playlists',
           style: TextStyle(color: Colors.white, fontSize: 15),

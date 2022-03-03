@@ -4,6 +4,7 @@ import 'package:youtube_clone/app/pages/home_page.dart';
 import 'package:youtube_clone/app/pages/library_page.dart';
 import 'package:youtube_clone/app/pages/shorts_page.dart';
 import 'package:youtube_clone/app/pages/subscriptions_page.dart';
+import 'package:youtube_clone/app/utils/app_colors.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -27,9 +28,9 @@ class _HomeState extends State<Home> {
     ];
 
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(24, 24, 24, 100),
+      backgroundColor: AppColors.mainColor,
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(24, 24, 24, 100),
+        backgroundColor: AppColors.mainColor,
         iconTheme: const IconThemeData(color: Colors.white),
         title: Image.asset('assets/images/logo.png',
             fit: BoxFit.contain, width: 40, height: 90),
@@ -52,7 +53,7 @@ class _HomeState extends State<Home> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: const Color.fromRGBO(24, 24, 24, 100),
+        backgroundColor: AppColors.mainColor,
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.white,
         currentIndex: currentIndex,

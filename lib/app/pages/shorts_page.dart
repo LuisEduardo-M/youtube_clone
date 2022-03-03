@@ -10,11 +10,6 @@ class ShortsPage extends StatefulWidget {
 class _ShortsPageState extends State<ShortsPage> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Shorts',
-        style: TextStyle(fontSize: 25),
-      ),
-    );
+    return Container();
   }
 }

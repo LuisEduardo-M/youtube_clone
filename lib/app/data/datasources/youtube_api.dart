@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:youtube_clone/app/data/models/videos.dart';
 
-const youtubeApiKey = 'AIzaSyAOwmRtIEHMb8ABRIkiuzhCfg1g-7M_nXo';
+const youtubeApiKey = 'AIzaSyBaCJz9tQNB63dllHKClOJTKiOUvolf8ds';
 
 const channelId = 'UC-GAhNmY6bkuuRPUSaRI_oQ';
 
